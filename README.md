@@ -6,6 +6,8 @@ Este repositório contém os scripts Terraform para provisionar e gerenciar um b
 
 Antes de se inicializer o banco de dados é necessário a configuração de uma nova secret no AWS Secrets Manager, com o nome "fiap-db". Essa secret deverá possuir os seguintes valores: username, password.
 
+Além disso, o cluster [EKS](https://github.com/mvcosta/FIAPTerraformEKS) deve estar de pé, pois o banco RDS será criado dentro da mesma VPC criada durante a criação do cluster.
+
 A inicialização do banco pode ser realizada de duas formas:
 
 ### 1. Realizar o fork do repositório
